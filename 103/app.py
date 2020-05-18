@@ -241,6 +241,18 @@ def planet_update(planet_id: int):
         return jsonify(message='Bad planet id provided'), 404
 
 
+@app.route('/planet/<int:planet_id>', methods=["DELETE"])
+@jwt_required
+def planet_update(planet_id: int):
+    planet = Planet.query.filter_by(planet_id=planet_id).first()
+    if planet:
+        db.session.delete(planet)
+        db.session.commit()
+        return jsonify(message='Planet {} deleted'.format(planet_id)), 202
+    else:
+        return jsonify(message='Bad planet id provided'), 404
+
+
 # Database models
 class User(db.Model):
     __tablename__ = 'users'

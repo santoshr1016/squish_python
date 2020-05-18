@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d96a88a-865b-4741-bdcc-d1c350180d3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/squish_python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/squish_python.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/103/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/103/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/103/planets.db" beforeDir="false" afterPath="$PROJECT_DIR$/103/planets.db" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +221,7 @@
       <updated>1589646010090</updated>
       <workItem from="1589646012867" duration="13891000" />
       <workItem from="1589763288146" duration="500000" />
-      <workItem from="1589763803868" duration="14035000" />
+      <workItem from="1589763803868" duration="14958000" />
     </task>
     <servers />
   </component>
