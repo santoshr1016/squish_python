@@ -2,6 +2,7 @@
 
 This project provides RESTful API for Planets Python
 
+I have used https://mailtrap.io to send mail, Awesome tool
 ## Example
 
 ```python
