@@ -4,6 +4,7 @@ from sqlalchemy import Column, String, Integer, Float
 import os
 from flask_marshmallow import Marshmallow
 from flask_jwt_extended import JWTManager, jwt_required, create_access_token
+from flask_mail import Mail, Message
 
 
 app = Flask(__name__)
@@ -12,11 +13,18 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 # I am configuring my database here
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'planets.db')
 app.config['JWT_SECRET_KEY'] = 'secure-secret'
+app.config['MAIL_SERVER'] = 'smtp.mailtrap.io'
+app.config['MAIL_PORT'] = 2525
+app.config['MAIL_USERNAME'] = os.environ['MAIL_USERNAME']
+app.config['MAIL_PASSWORD'] = os.environ['MAIL_PASSWORD']
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
 
 # This is initializing the database, before start using it, this is constructor, Now make the models, ie classes
 db = SQLAlchemy(app)
 mm = Marshmallow(app)
 jwt = JWTManager(app)
+mail = Mail(app)
 
 
 @app.cli.command('db_create')
@@ -115,6 +123,10 @@ def planets():
     return jsonify(result)
 
 
+'''
+These endpoint are checked in the Postman using the Form and passing the values
+No need to create form
+'''
 @app.route('/register', methods=['POST'])
 def register():
     email = request.form['email']
@@ -131,6 +143,9 @@ def register():
         return jsonify(message='The new user with email {}, Added successfully'.format(email)), 201
 
 
+'''
+API testing is done using the Postman Form and json data
+'''
 @app.route('/login', methods=['POST'])
 def login():
     if request.is_json:
@@ -146,6 +161,84 @@ def login():
         return jsonify(message='Login Successful', access_token=access_token)
     else:
         return jsonify(message='You entered bad email and password'), 401
+
+
+'''
+In case you forget the password
+'''
+@app.route('/get_password/<string:email>', methods=['GET'])
+def get_password(email: str):
+    user = User.query.filter_by(email=email).first()
+    if user:
+        msg = Message("Your planetory API password is " + user.password,
+                      sender="admin@example.com",
+                      recipients=[email]
+                      )
+        mail.send(msg)
+        return jsonify(message="Password send to " + email)
+    else:
+        return jsonify(message="The email id, {} does not exists".format(email)), 401
+
+
+@app.route('/planet/<int:planet_id>', methods=["GET"])
+def planet_details(planet_id: int):
+    planet = Planet.query.filter_by(planet_id=planet_id).first()
+    if planet:
+        result = planet_schema.dump(planet)
+        return jsonify(result)
+    else:
+        return jsonify(message="Planet does not exists"), 404
+
+'''
+    mercury = Planet(planet_name='Mercury',
+                     planet_type='Class D',
+                     home_star='Sun',
+                     mass=3.258e23,
+                     radius=1516,
+                     distance=35.34e98
+                     )
+'''
+@app.route('/planet', methods=['POST'])
+@jwt_required  # protecting the endpoints
+def planet_add():
+    planet_name = request.form['planet_name']
+    test = Planet.query.filter_by(planet_name=planet_name).first()
+    if test:
+        return jsonify(message="The planet {} is already in database".format(planet_name)), 409  # conflict
+    else:
+        planet_type = request.form['planet_type']
+        home_star = request.form['home_star']
+        mass = request.form['mass']
+        radius = request.form['radius']
+        distance = request.form['distance']
+
+        new_planet = Planet(planet_name=planet_name,
+                            planet_type=planet_type,
+                            home_star=home_star,
+                            mass=mass,
+                            radius=radius,
+                            distance=distance
+                            )
+        db.session.add(new_planet)
+        db.session.commit()
+        return jsonify(message='The new planet {}, Added successfully'.format(planet_name)), 201
+
+
+@app.route('/planet/<int:planet_id>', methods=["PUT"])
+@jwt_required
+def planet_update(planet_id: int):
+    planet = Planet.query.filter_by(planet_id=planet_id).first()
+    if planet:
+        planet.planet_name = request.form['planet_name']
+        planet.planet_type = request.form['planet_type']
+        planet.home_star = request.form['home_star']
+        planet.mass = float(request.form['mass'])
+        planet.radius = float(request.form['radius'])
+        planet.distance = float(request.form['distance'])
+        db.session.commit()
+        return jsonify(message='Planet {} updated'.format(planet_id)), 202
+    else:
+        return jsonify(message='Bad planet id provided'), 404
 
 
 # Database models
