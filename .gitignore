@@ -136,3 +136,19 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# OS X
+.history
+.DS_Store
+
+# IntelliJ
+.idea_modules
+*.iml
+*.iws
+*.ipr
+.idea/
+build/
+*/build/
+out/
+103/.idea
+103/.idea/*
