@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d96a88a-865b-4741-bdcc-d1c350180d3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/Pipfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/Pipfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/test_main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urls.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urlshort/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urlshort/static/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urlshort/static/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urlshort/static/jquery-3.3.1.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urlshort/static/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urlshort/static/user_files/house267_Cherry_Lane.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urlshort/static/user_files/house67_Cherry_Lane.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urlshort/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urlshort/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urlshort/templates/page_not_found.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urlshort/templates/your_url.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/104/url-shortener/urlshort/urlshort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/squish_python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/squish_python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/101/logging.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/techgig/powerpuff_girls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/techgig/some_arcade.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/103/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/103/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,10 +28,13 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/104/url-shortener/urlshort/urlshort.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../rsantosh.de" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/104" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/104" />
     </key>
@@ -63,39 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.url_shortner">
-    <configuration name="binary_search" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="squish_python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/101" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
-      </EXTENSION>
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/101/binary_search.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.some_arcade">
     <configuration name="hello_world" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="squish_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,6 +66,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deleteme/hello_world.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logging" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="squish_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/101" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/101/logging.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,7 +118,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="repeating_number_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="powerpuff_girls" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="squish_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,12 +126,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/101" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/techgig" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/101/repeating_number_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/techgig/powerpuff_girls.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,7 +140,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="rotate_array" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="some_arcade" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="squish_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -170,12 +148,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/101" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/techgig" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/101/rotate_array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/techgig/some_arcade.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -223,7 +201,7 @@
         <env name="FLASK_APP" value="urlshort" />
       </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/../pyprac/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -244,19 +222,19 @@
     <list>
       <item itemvalue="Flask server.Planetory API" />
       <item itemvalue="Flask server.url_shortner" />
-      <item itemvalue="Python.binary_search" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.repeating_number_1" />
-      <item itemvalue="Python.rotate_array" />
       <item itemvalue="Python.hello_world" />
+      <item itemvalue="Python.logging" />
+      <item itemvalue="Python.powerpuff_girls" />
+      <item itemvalue="Python.some_arcade" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.some_arcade" />
+        <item itemvalue="Python.powerpuff_girls" />
+        <item itemvalue="Python.logging" />
         <item itemvalue="Python.hello_world" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.repeating_number_1" />
-        <item itemvalue="Python.rotate_array" />
-        <item itemvalue="Python.binary_search" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +250,8 @@
       <updated>1589646010090</updated>
       <workItem from="1589646012867" duration="13891000" />
       <workItem from="1589763288146" duration="500000" />
-      <workItem from="1589763803868" duration="18012000" />
+      <workItem from="1589763803868" duration="24396000" />
+      <workItem from="1589881142414" duration="630000" />
     </task>
     <servers />
   </component>
@@ -293,16 +272,19 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/squish_python$Planetory_API.coverage" NAME="Planetory API Coverage Results" MODIFIED="1589808831552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/squish_python$sequential_search.coverage" NAME="sequential_search Coverage Results" MODIFIED="1589646491636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/101" />
-    <SUITE FILE_PATH="coverage/squish_python$binary_search.coverage" NAME="binary_search Coverage Results" MODIFIED="1589646959615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/101" />
     <SUITE FILE_PATH="coverage/squish_python$rotate_array.coverage" NAME="rotate_array Coverage Results" MODIFIED="1589647630533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/101" />
     <SUITE FILE_PATH="coverage/squish_python$url_shortner.coverage" NAME="url_shortner Coverage Results" MODIFIED="1589843343737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/squish_python$app.coverage" NAME="app Coverage Results" MODIFIED="1589757179172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/103" />
+    <SUITE FILE_PATH="coverage/squish_python$logging.coverage" NAME="logging Coverage Results" MODIFIED="1589845545758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/101" />
     <SUITE FILE_PATH="coverage/squish_python$repeating_number_1.coverage" NAME="repeating_number_1 Coverage Results" MODIFIED="1589677371705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/101" />
     <SUITE FILE_PATH="coverage/squish_python$hello_world.coverage" NAME="hello_world Coverage Results" MODIFIED="1589779665694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/deleteme" />
-    <SUITE FILE_PATH="coverage/squish_python$Planetory_APIs.coverage" NAME="Planetory APIs Coverage Results" MODIFIED="1589763396182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/squish_python$powerpuff_girls.coverage" NAME="powerpuff_girls Coverage Results" MODIFIED="1589861847824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/techgig" />
     <SUITE FILE_PATH="coverage/squish_python$sum_array.coverage" NAME="sum_array Coverage Results" MODIFIED="1589646248152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/101" />
     <SUITE FILE_PATH="coverage/squish_python$main.coverage" NAME="main Coverage Results" MODIFIED="1589712164505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/102/hello-flask" />
+    <SUITE FILE_PATH="coverage/squish_python$some_arcade.coverage" NAME="some_arcade Coverage Results" MODIFIED="1589867080496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/techgig" />
+    <SUITE FILE_PATH="coverage/squish_python$Planetory_API.coverage" NAME="Planetory API Coverage Results" MODIFIED="1589808831552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/squish_python$binary_search.coverage" NAME="binary_search Coverage Results" MODIFIED="1589646959615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/101" />
+    <SUITE FILE_PATH="coverage/squish_python$Planetory_APIs.coverage" NAME="Planetory APIs Coverage Results" MODIFIED="1589763396182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
