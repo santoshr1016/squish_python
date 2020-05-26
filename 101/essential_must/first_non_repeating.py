@@ -1,3 +1,6 @@
+from collections import OrderedDict
+
+
 def first_non_repeating(s):
     my_dict = dict()
     for ch in s:
@@ -8,5 +11,19 @@ def first_non_repeating(s):
             break
 
 
+def first_non_repeating_using_ordered_dict(s):
+    od = OrderedDict()
+    for ch in s:
+        if ch in od:
+            od.get(ch).append(ch)
+        else:
+            od[ch] = [ch]
+    for k, v in od.items():
+        if len(v) == 1:
+            print(k)
+            break
+
+
 s = "aaabbcddde"
 first_non_repeating(s)
+first_non_repeating_using_ordered_dict(s)
