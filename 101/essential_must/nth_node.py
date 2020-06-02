@@ -65,11 +65,11 @@ def find_the_path(A, rows, cols, i, j):  #
         for d in ((0, 1), (0, -1), (1, 0), (-1, 0)):
             next_x, next_y = x + d[0], y + d[1]
             if 0 <= next_x < rows and 0 <= next_y < cols:
-                if A[next_x][next_y] not in seen and length(result) < 4:
+                if A[next_x][next_y] not in seen and len(result) < 4:
                     stack.append((next_x, next_y))
                     # result.append(A[next_x][next_y])
                     seen.add(A[next_x][next_y])
                     count += 1
-                if length(result) == 4:
+                if len(result) == 4:
                     print(result)
                     break
